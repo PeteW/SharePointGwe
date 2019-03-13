@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution solutionVersion="1.0.0.498" productVersion="12.0.0" PIVersion="1.0.0.0" href="http://corp-webdev2/HrForm/Corp.Hr.PersonnelRequisitions.FormTemplate.xsn" name="urn:schemas-microsoft-com:office:infopath:Corp-Hr-PersonnelRequisitions-FormTemplate:-myXSD-2005-09-22T20-42-56" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?>
+<?mso-infoPath-file-attachment-present?>
+<my:personnelRequisitionForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:tns="http://schemas.microsoft.com/sharepoint/soap/directory/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:ns1="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2005-09-22T20:42:56" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+  <my:reportsTo>Assign to Director</my:reportsTo>
+  <my:departmentName>Peter_Test</my:departmentName>
+  <my:justification>more hire!</my:justification>
+  <my:title>Test Engineer</my:title>
+  <my:cube>123</my:cube>
+  <my:dateNeeded>2011-10-05</my:dateNeeded>
+  <my:hoursPerWeek>26</my:hoursPerWeek>
+  <my:type></my:type>
+  <my:employeeClassification>Exempt</my:employeeClassification>
+  <my:jobDescirptionLocation></my:jobDescirptionLocation>
+  <my:financialStatus>Budgeted</my:financialStatus>
+  <my:employeeType>1</my:employeeType>
+  <my:hrSection>
+    <my:positionFilledBy></my:positionFilledBy>
+    <my:hrComments></my:hrComments>
+    <my:dateFilled xsi:nil="true"></my:dateFilled>
+    <my:startDate xsi:nil="true"></my:startDate>
+    <my:requisitionNumber>2</my:requisitionNumber>
+    <my:humanResourcesSignatureDate xsi:nil="true"></my:humanResourcesSignatureDate>
+    <my:humanResourcesSignature></my:humanResourcesSignature>
+    <my:currentApproverEmail></my:currentApproverEmail>
+    <my:currentApproverName></my:currentApproverName>
+    <my:currentApproverLogonName></my:currentApproverLogonName>
+    <my:notesForApprover></my:notesForApprover>
+  </my:hrSection>
+  <my:temporaryPosition>1</my:temporaryPosition>
+  <my:budgetedPosition>FY12 new one PRO-2-Testing-PR-REQ-02.xml</my:budgetedPosition>
+  <my:formState>Start</my:formState>
+  <my:isFormSubmitted>false</my:isFormSubmitted>
+  <my:isFormValid>false</my:isFormValid>
+  <my:approverSection></my:approverSection>
+  <my:validationMessages></my:validationMessages>
+  <my:formName>FY2012_</my:formName>
+  <my:submitterUserName>XXX\pweissbrod</my:submitterUserName>
+  <my:submitterEmail></my:submitterEmail>
+  <my:submitterName></my:submitterName>
+  <my:debugSection></my:debugSection>
+  <my:isDebugMode>false</my:isDebugMode>
+  <my:formStateDescription></my:formStateDescription>
+  <my:selectedAction></my:selectedAction>
+  <my:departmentDirectorUserName>Weissbrod, Peter</my:departmentDirectorUserName>
+  <my:budgetFormUrl></my:budgetFormUrl>
+  <my:isFirstTimeSubmitted>true</my:isFirstTimeSubmitted>
+  <my:fileAttachment xsi:nil="true"></my:fileAttachment>
+</my:personnelRequisitionForm>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution solutionVersion="1.0.0.498" productVersion="12.0.0" PIVersion="1.0.0.0" href="http://scorp-webdev2/HrForm/Corp.Hr.PersonnelRequisitions.FormTemplate.xsn" name="urn:schemas-microsoft-com:office:infopath:Corp-Hr-PersonnelRequisitions-FormTemplate:-myXSD-2005-09-22T20-42-56" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?>
+<personnelRequisitionForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xml:lang="en-us" xmlns="http://schemas.microsoft.com/office/infopath/2003/myXSD/2005-09-22T20:42:56">
+  <reportsTo>Assign to Director</reportsTo>
+  <departmentName>Peter_Test</departmentName>
+  <justification>more hire!</justification>
+  <title>Test Engineer</title>
+  <cube>123</cube>
+  <dateNeeded>2011-10-05</dateNeeded>
+  <hoursPerWeek>26</hoursPerWeek>
+  <type />
+  <employeeClassification>Exempt</employeeClassification>
+  <jobDescirptionLocation />
+  <financialStatus>Non-Budgeted</financialStatus>
+  <employeeType>1</employeeType>
+  <hrSection>
+    <positionFilledBy />
+    <hrComments />
+    <dateFilled xsi:nil="true" />
+    <startDate xsi:nil="true" />
+    <requisitionNumber>2</requisitionNumber>
+    <humanResourcesSignatureDate xsi:nil="true" />
+    <humanResourcesSignature />
+    <currentApproverEmail>pweissbrod@xxx.com</currentApproverEmail>
+    <currentApproverName>Weissbrod, Peter</currentApproverName>
+    <currentApproverLogonName>XXX\pweissbrod</currentApproverLogonName>
+    <notesForApprover />
+  </hrSection>
+  <temporaryPosition>2</temporaryPosition>
+  <budgetedPosition>FY12 new one PRO-2-Testing-PR-REQ-02.xml</budgetedPosition>
+  <formState>Manager</formState>
+  <isFormSubmitted>true</isFormSubmitted>
+  <isFormValid>true</isFormValid>
+  <approverSection>
+    <approver>
+      <approverDisplayName>Weissbrod, Peter</approverDisplayName>
+      <approverEmail>pweissbrod@xxx.com</approverEmail>
+      <approverUserName>XXX\pweissbrod</approverUserName>
+      <isApproved>true</isApproved>
+      <approverComments />
+      <notesFromHr />
+    </approver>
+  </approverSection>
+  <validationMessages />
+  <formName>FY2012__Test Engineer_2011-10-20T12_25_25.xml</formName>
+  <submitterUserName>XXX\pweissbrod</submitterUserName>
+  <submitterEmail>pweissbrod@xxx.com</submitterEmail>
+  <submitterName>Weissbrod, Peter</submitterName>
+  <debugSection />
+  <isDebugMode>false</isDebugMode>
+  <formStateDescription>Form under review by [Weissbrod, Peter].</formStateDescription>
+  <selectedAction>Submit to Director</selectedAction>
+  <departmentDirectorUserName>Weissbrod, Peter</departmentDirectorUserName>
+  <budgetFormUrl />
+  <isFirstTimeSubmitted>false</isFirstTimeSubmitted>
+  <fileAttachment xsi:nil="true" />
+</personnelRequisitionForm>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cdb6c986-1312-40dc-a616-535392b253be" solutionId="cdb6c986-1312-40dc-a616-535392b253be" resetWebServer="false" name="Oxbow.Gwe.SharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="FSharp.Core.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Libs\FSharp.Core.dll" />
+    <customAssembly location="FSharp.PowerPack.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Libs\FSharp.PowerPack.dll" />
+    <projectOutputAssembly location="Oxbow.Gwe.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Oxbow.Gwe.Core\Oxbow.Gwe.Core.csproj" />
+    <customAssembly location="Oxbow.Gwe.Lang.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Libs\Oxbow.Gwe.Lang.dll" />
+    <projectOutputAssembly location="Oxbow.Gwe.TestCustomWorkflowTransitionAction.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Oxbow.Gwe.TestCustomWorkflowTransitionAction\Oxbow.Gwe.TestCustomWorkflowTransitionAction.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="cb388cc6-e86b-40b9-b73e-25e28763666a" />
+    <featureReference itemId="4e039b48-95e3-48a5-81a8-7b1d58b91b43" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="127b71f6-b374-4f47-b7f2-b0303f49898d" />
+    <projectItemReference itemId="9c9498bf-a23f-4141-9ee7-68dd899a3b95" />
+    <projectItemReference itemId="88165754-61ff-4fb2-bd70-45196f5ae362" />
+    <projectItemReference itemId="7658f691-a3a2-4bfc-8baa-e7d41b931643" />
+  </projectItems>
+</package>

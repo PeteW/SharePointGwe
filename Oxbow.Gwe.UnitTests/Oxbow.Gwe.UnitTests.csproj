@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4B640E4-271A-4F41-B2ED-0A917472AFCB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oxbow.Gwe.UnitTests</RootNamespace>
+    <AssemblyName>Oxbow.Gwe.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\FSharp.PowerPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.4.3.0\lib\NET35\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\Libs\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExpressionParsingTests.cs" />
+    <Compile Include="FormContainerTests.cs" />
+    <Compile Include="FormHistoryItemTests.cs" />
+    <Compile Include="FormManipulationTests.cs" />
+    <Compile Include="GweAgentRunnerTests.cs" />
+    <Compile Include="GweTemplateEngineTests.cs" />
+    <Compile Include="InsertXmlTests.cs" />
+    <Compile Include="LoggingWorkflowTransitionHandlerTests.cs" />
+    <Compile Include="MailWorkflowTransitionHandlerTests.cs" />
+    <Compile Include="PermissionSetWorkflowTransitionHandlerTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexTests.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="TimerJobTests.cs" />
+    <Compile Include="UserIdentificationServiceTests.cs" />
+    <Compile Include="UserIdentityTests.cs" />
+    <Compile Include="WorkflowConfigurationTests.cs" />
+    <Compile Include="WorkflowTransitionActions\CustomCodeWorkflowTransitionActionTests.cs" />
+    <Compile Include="WorkflowTransitionActions\EmailWorkflowTransitionActionTests.cs" />
+    <Compile Include="WorkflowTransitionActions\FormEditorWorkflowTransitionActionTests.cs" />
+    <Compile Include="WorkflowTransitionActions\ListItemEditorWorkflowTransitionActionTests.cs" />
+    <Compile Include="WorkflowTransitionActions\ListLogWorkflowTransitionActionTests.cs" />
+    <Compile Include="WorkflowTransitionActions\PermissionSetWorkflowTransitionActionTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oxbow.Gwe.Core\Oxbow.Gwe.Core.csproj">
+      <Project>{2AF66616-35E0-49DF-A38E-2A4F18920C77}</Project>
+      <Name>Oxbow.Gwe.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oxbow.Gwe.Lang\Oxbow.Gwe.Lang.fsproj">
+      <Project>{9DBDAE5F-95B0-4CC3-B3E4-03F10CD29891}</Project>
+      <Name>Oxbow.Gwe.Lang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oxbow.Gwe.TestCustomWorkflowTransitionAction\Oxbow.Gwe.TestCustomWorkflowTransitionAction.csproj">
+      <Project>{3AEF0B74-6814-4BBF-BE84-E33B6AC3597C}</Project>
+      <Name>Oxbow.Gwe.TestCustomWorkflowTransitionAction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExampleForm1.xml" />
+    <EmbeddedResource Include="Resources\ExampleForm2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebServices\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

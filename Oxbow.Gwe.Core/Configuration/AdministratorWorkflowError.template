@@ -1,0 +1,13 @@
+﻿<xml>
+  <EmailTemplate>
+	  <to>${to}</to>
+	  <from>${from}</from>
+	  <cc>${cc}</cc>
+	  <subject>Error reported in workflow with list item #${listItemId}</subject>
+	  <body>
+      Item link: <a href='${listItemUrl}'>${listItemUrl}</a>
+      <br/>
+	  The following execption was captured:${exception}
+      <br/>
+    </body>
+  </EmailTemplate>

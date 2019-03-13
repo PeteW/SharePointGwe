@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e40e37bb-f1e1-4af5-9cff-a87c6b69c960" solutionId="e40e37bb-f1e1-4af5-9cff-a87c6b69c960" resetWebServer="false" name="Oxbow.GenericDashboard.SharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="SX.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Libs\SX.dll" />
+    <projectOutputAssembly location="Oxbow.GenericDashboard.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Oxbow.GenericDashboard.Core\Oxbow.GenericDashboard.Core.csproj" />
+    <customAssembly location="Newtonsoft.Json.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\Newtonsoft.Json.4.5.11\lib\net35\Newtonsoft.Json.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="176bd92c-7118-4104-8d56-8de5ddcf9ed2" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d293ab9a-89d8-49f2-82b7-9d4622a7efca" />
+    <projectItemReference itemId="4a4e85dc-efee-4ee3-be05-3c77135d0f42" />
+  </projectItems>
+</package>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AF66616-35E0-49DF-A38E-2A4F18920C77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oxbow.Gwe.Core</RootNamespace>
+    <AssemblyName>Oxbow.Gwe.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Oxbow.Gwe.Core.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.PowerPack, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\FSharp.PowerPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server">
+      <HintPath>..\Libs\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.UserProfiles">
+      <HintPath>..\Libs\Microsoft.Office.Server.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Enums.cs" />
+    <Compile Include="Configuration\ResolveType.cs" />
+    <Compile Include="Configuration\SettingsManager.cs" />
+    <Compile Include="Contracts\IFormContainer.cs" />
+    <Compile Include="Contracts\ILogger.cs" />
+    <Compile Include="Contracts\ISpListItemContainer.cs" />
+    <Compile Include="Contracts\ITemplateEngine.cs" />
+    <Compile Include="Contracts\IUserIdentificationService.cs" />
+    <Compile Include="Contracts\IWorkflowTransitionActionConfigControl.cs" />
+    <Compile Include="Contracts\IWorkflowTransitionCustomAction.cs" />
+    <Compile Include="Contracts\IWorkflowTransitionHandler.cs" />
+    <Compile Include="Utils\QueryString.cs" />
+    <Compile Include="WebServiceModels\AppendXml.cs" />
+    <Compile Include="WebServiceModels\BaseWebServiceModels.cs" />
+    <Compile Include="WebServiceModels\DeleteNode.cs" />
+    <Compile Include="WebServiceModels\GetUserFullIdentity.cs" />
+    <Compile Include="WebServiceModels\GetSharePointUsersByGroup.cs" />
+    <Compile Include="Models\SPListItemContainer.cs" />
+    <Compile Include="TemplateEngine\ExpressionEvaluator.cs" />
+    <Compile Include="Utils\UserIdentity.cs" />
+    <Compile Include="WorkflowEngine\GweAgentRunner.cs" />
+    <Compile Include="WorkflowTransitionActions\CustomCodeWorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\DummyWorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\EmailWorkflowTransitionAction.cs" />
+    <Compile Include="Models\FormContainer.cs" />
+    <Compile Include="WorkflowTransitionActions\FormEditorWorkflowTransitionAction.cs" />
+    <Compile Include="Models\FormHistoryItem.cs" />
+    <Compile Include="WorkflowTransitionActions\InjectXmlWorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\ListItemEditorWorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\ListLogWorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\PermissionSetWorkflowTransitionAction.cs" />
+    <Compile Include="Models\AgentLogItem.cs" />
+    <Compile Include="Models\WorkflowConfiguration.cs" />
+    <Compile Include="WorkflowTransitionActions\WorkflowTransitionAction.cs" />
+    <Compile Include="WorkflowTransitionActions\WorkflowTransitionActionFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateEngine\GweLangTemplateEngine.cs" />
+    <Compile Include="Utils\BufferedException.cs" />
+    <Compile Include="Utils\CommonCode.cs" />
+    <Compile Include="Utils\EmailTemplateReader.cs" />
+    <Compile Include="Utils\EmailUtils.cs" />
+    <Compile Include="Utils\EventLogLogger.cs" />
+    <Compile Include="Utils\EventReceiverUtils.cs" />
+    <Compile Include="Utils\Extensions.cs" />
+    <Compile Include="Utils\UserIdentificationService.cs" />
+    <Compile Include="WebServices\GweWebServices.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkflowConfigurationRepository.cs" />
+    <Compile Include="WorkflowEngine\MailWorkflowTransitionHandler.cs" />
+    <Compile Include="WorkflowEngine\TimeTriggerJobRunner.cs" />
+    <Compile Include="WorkflowEngine\WorkflowEventReceiver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\AdministratorWorkflowError.template" />
+    <None Include="Oxbow.Gwe.Core.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oxbow.Gwe.Lang\Oxbow.Gwe.Lang.fsproj">
+      <Project>{9DBDAE5F-95B0-4CC3-B3E4-03F10CD29891}</Project>
+      <Name>Oxbow.Gwe.Lang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

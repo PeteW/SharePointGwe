@@ -1,0 +1,33 @@
+﻿{
+module Lexer
+open System
+open Parser
+open Microsoft.FSharp.Text.Lexing
+
+let lexeme lexbuf =
+    LexBuffer<char>.LexemeString lexbuf
+}
+
+// These are some regular expression definitions
+let digit = ['0'-'9']
+let char = ['a'-'z' 'A'-'Z']
+let whitespace = [' ' '\t' ]
+let newline = ('\n' | '\r' '\n')
+//let identifier = char(char|digit|['-' '_' '.' ':' '/' '\\' '=' ])* 
+let identifier = ['0'-'9' 'A'-'Z' 'a'-'z' '#' '%' '=' '@' '`' '~' '&' '*' '\'' '<' '>' '?' '.' ':' ';' '_' '|' '^' '/' '-' '[' '+' ']' '\"' ]* 
+let function = ['!']char(char|digit|['-' '_' '.'])*
+
+rule tokenize = parse
+| '"' [^'"']* '"'   {  let s = new string(lexbuf.Lexeme) in STRING <| s.Replace("\"","") }
+| whitespace	{ tokenize lexbuf }
+| newline       { tokenize lexbuf }
+| ","			{ COMMA }
+| function		{ FUNCTION(lexeme lexbuf) }
+| "("			{ LPAREN }
+| ")"			{ RPAREN }
+| identifier	{ STRING(lexeme lexbuf)}
+| eof   { EOF }
+// Numeric constants
+//| ['-']?digit+									{ INT32 (Int32.Parse(lexeme lexbuf)) }
+//| ['-']?digit+('.'digit+)?(['e''E']digit+)?		{ FLOAT (Double.Parse(lexeme lexbuf)) }
+

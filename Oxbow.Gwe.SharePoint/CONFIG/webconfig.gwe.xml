@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<actions>
+  <add path="configuration/appSettings" id="{F890379B-C988-457B-A350-26D4C8909FA9}">
+    <add key="aspnet:MaxHttpCollectionKeys" value="5000" />
+  </add>
+</actions>

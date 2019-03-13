@@ -1,0 +1,29 @@
+﻿%{
+open Oxbow.Gwe.Lang.Ast
+%}
+// The start token becomes a parser function in the compiled code:
+%start start
+
+%token <string> STRING
+%token LPAREN RPAREN
+%token EOF
+%token COMMA
+%token <string> FUNCTION
+
+%type < Oxbow.Gwe.Lang.Ast.Equation > start
+
+%%
+
+start: Prog { Equation($1) }
+
+Prog:
+    | Expr EOF					{ $1 }
+
+Expr: 
+	| FUNCTION LPAREN ArgList RPAREN	{Func($1,$3)}
+	| STRING							{Text($1)}
+
+ArgList:
+	| 									{ [] }
+	| Expr								{ [$1] }
+	| Expr COMMA ArgList				{ $1 :: $3 }

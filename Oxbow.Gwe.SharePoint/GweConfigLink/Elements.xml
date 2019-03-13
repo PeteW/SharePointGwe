@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+      GroupId="ActionsMenu"
+    ImageUrl="{SiteUrl}/_layouts/Oxbow.Gwe/images/Oxbow.png" 
+    Location="Microsoft.SharePoint.StandardMenu" 
+    Sequence="101"
+  -->
+  <CustomAction
+      Description="Go to the Gwe Configuration"
+      Id="b1663c9c-7987-4816-81d3-6c180aecba77"
+      GroupId="ActionsMenu"
+      ImageUrl="{SiteUrl}/_layouts/Oxbow.Gwe/images/Oxbow.png" 
+      Location="Microsoft.SharePoint.StandardMenu" 
+      Sequence="101"
+      RegistrationType="List"
+      Title="GweConfigLink"
+    >
+    <!--
+      Description="Go to the Gwe Configuration"
+      Id="b1663c9c-7987-4816-81d3-6c180aecba77"
+      Location="CommandUI.Ribbon"
+      RegistrationType="List"
+      Title="GweConfigLink"
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Library.Groups._children">
+          <Group
+            Id="SPKings.Ribbon.NewGroupInExistingTab.SearchGroup"
+            Sequence="15"
+            Description="Different Search Engines"
+            Title="Search Engine Group"
+            Template="Ribbon.Templates.Flexible2"
+          >
+            <Controls
+              Id="SPKings.Ribbon.NewGroupInExistingTab.SearchGroup.Controls">
+                <Button
+                  Id="SPKings.Ribbon.NewGroupInExistingTab.SearchGroup.SearchBingButton"
+                  Sequence="15"
+                  Image32by32="/_layouts/Oxbow.Gwe/images/Oxbow.png"
+                  Description="Click to see Bing message"
+                  LabelText="Fuck"
+                  Command="Skynet_Test_Button"
+                  TemplateAlias="o1" 
+                />
+            </Controls>
+          </Group>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="Skynet_Test_Button"
+          CommandAction="javascript:alert('SharePoint 2010 Rocks!');" />
+      </CommandUIHandlers>
+
+    </CommandUIExtension>
+    -->
+    <UrlAction Url="{SiteUrl}/_layouts/Oxbow.Gwe/GweConfig.aspx?List={ListId}" />
+  </CustomAction>
+</Elements>
